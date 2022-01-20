@@ -1,0 +1,32 @@
+<div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+  <a class="d-flex align-items-center text-dark text-decoration-none">
+    <span class="page-title text-light">Liste des demandes</span>
+  </a>
+  <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+    <form class="d-flex">
+      <input class="form-control me-2" id="search" type="text" placeholder="Search" aria-label="Search" />
+    </form>
+  </nav>
+</div>
+
+<div class="search-list">
+  <table class="table table-hover table-sm whitespace-no-wrap table-dark" id="table-demande">
+    <thead>
+      <tr class="text-xs font-semibold text-left text-gray-500 uppercase  ">
+        <th scope="col">ID</th>
+        <th scope="col">Timestamp</th>
+        <th scope="col">Sandbox user</th>
+        <th scope="col">Requested by</th>
+        <th scope="col">Entity</th>
+        <th scope="col">Business Unit</th>
+        <th scope="col">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% users.forEach(function(user){ %>
+      <%- include('partials/list', {user: user, names: names, entity: entity}); %>
+      <% }); %>
+    </tbody>
+  </table>
+  <!-- Table ends -->
+</div>
