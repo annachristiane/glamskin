@@ -797,6 +797,22 @@ section {
   color: grey;
 }
 
+@media (max-width: 990px) {
+  .portfolio .portfolio-item {
+    text-align: center !important;
+  }
+
+  .portfolio .portfolio-item img {
+    width: 25%;
+    height: 25%;
+  }
+
+  .portfolio .portfolio-item .description,
+  .portfolio .portfolio-item p {
+    font-size: 0.5rem;
+  }
+}
+
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
