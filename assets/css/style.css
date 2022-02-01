@@ -556,7 +556,8 @@ section {
   font-size: 34px;
   padding: 80px;
 }
-.services .title a {
+
+.services a {
   color: #fff;
   position: absolute;
   letter-spacing: 0.1em;
